@@ -17,6 +17,12 @@ module.exports = {
       user_artistname: {
         type: Sequelize.STRING
       },
+      user_address: {
+        type: Sequelize.STRING
+      },
+      user_privateKey: {
+        type: Sequelize.STRING
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,

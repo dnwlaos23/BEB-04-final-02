@@ -7,7 +7,7 @@ module.exports = {
     }
 
     try {
-      const user_id = req.body.user_id;
+      const user_id = req.session.user_id;
       const art_id = req.body.id;
 
       const tradeInfo = await Trade.update(
