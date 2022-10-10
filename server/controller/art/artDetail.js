@@ -11,7 +11,7 @@ module.exports = {
       })
 
       res.status(200).send({
-          message: 'get art detail success',
+          message: 'get art detail success22',
           data: artInfo,
       })
 
