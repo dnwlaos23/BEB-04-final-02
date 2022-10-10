@@ -18,7 +18,10 @@ router.post("/cancleReservation", tradeController.cancleReservation.post);
 // * POST api/trade/general/g_confirmContract
 router.post("/general/confirmContract", tradeController.g_confirmContract.post);
 
-// * POST api/trade/general/a_confirmContract
+// * POST api/trade/artist/a_confirmContract
 router.post("/artist/confirmContract", tradeController.a_confirmContract.post);
+
+// * POST api/trade/tradeDetail
+router.post("/tradeDetail", tradeController.tradeDetail.post);
 
 module.exports = router;

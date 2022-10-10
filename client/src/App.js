@@ -13,7 +13,10 @@ import Mypage1 from "./pages/Mypage1";
 import Mypage2 from "./pages/Mypage2";
 import DetailPainter from "./pages/DetailPainter";
 import DetailUser from "./pages/DetailUser";
-import DetailUserAfterContract from "./pages/DetailUserAfterContract";
+import OfflineContract_Painter from "./pages/OfflineContract_Painter";
+import ContractReservation from "./pages/ContractReservation";
+import NFT_Success from "./pages/NFT_Success";
+import OfflineContract_User from "./pages/OfflineContract_User";
 
 function App() {
   return (
@@ -25,15 +28,37 @@ function App() {
         <Route path="/signupChoice" element={<SignupChoice />} />
         <Route path="/signupPainter" element={<SignupPainter />} />
         <Route path="/signupUser" element={<SignupUser />} />
-        <Route path="/detailPainter" element={<DetailPainter />} />
-        <Route path="/detailUser" element={<DetailUser />} />
-        <Route path="/workregister" element={<Workregister />} />
-        <Route path="/mypage1" element={<Mypage1 />} />
-        <Route path="/mypage2" element={<Mypage2 />} />
+        <Route path="/detailPainter/:id" element={<DetailPainter />} />
+        <Route path="/detailUser/:id" element={<DetailUser />} />
+        <Route path="/NFT_Success" element={<NFT_Success />} />
+
+        {/* 작가 계약 예약 취소 페이지 */}
         <Route
-          path="/detailUserAfterContract"
-          element={<DetailUserAfterContract />}
+          path="/contractReservation/:id/:trade_user_id"
+          element={<ContractReservation />}
         />
+
+        {/* 작품 등록 페이지 */}
+        <Route path="/workregister" element={<Workregister />} />
+
+        {/* 작가 마이페이지 */}
+        <Route path="/mypage1" element={<Mypage1 />} />
+
+        {/* 일반 유저 마이페이지 */}
+        <Route path="/mypage2" element={<Mypage2 />} />
+
+        <Route
+          path="/offlineContract_painter/:id/:trade_user_id"
+          element={<OfflineContract_Painter />}
+        />
+
+        {/* 일반 유저 계약 페이지 */}
+        <Route
+          path="/offlineContract_user/:id/:trade_user_id"
+          element={<OfflineContract_User />}
+        />
+
+        {/*<Route path="/usercontract" element={<ContractUser/>} />*/}
       </Routes>
       {/* <Footer /> */}
     </Router>

@@ -14,6 +14,12 @@ module.exports = {
       user_pass: {
         type: Sequelize.STRING
       },
+      user_name: {
+        type: Sequelize.STRING
+      },
+      user_birth: {
+        type: Sequelize.STRING
+      },
       user_artistname: {
         type: Sequelize.STRING
       },

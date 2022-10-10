@@ -5,7 +5,8 @@ module.exports = {
     try {
       
       const { count, rows } = await Art.findAndCountAll({
-        where: { art_state: 0}
+        where: { art_state: 0},
+        order: [["id", "desc"]] 
       });
 
       res.status(200).json({

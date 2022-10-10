@@ -1,8 +1,18 @@
-.mypage2 .작가님이신가요 {
-  text-align: center;
-  /* border: 1px solid violet; */
+.mypage2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mypage2 > div:first-child {
+  display: flex;
+  justify-content: start;
+  width: 1200px;
+}
+
+.mypage2 .나의구매요청목록 {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 35px;
+  margin: 40px 0 0 40px;
 }
 
 .mypage2 .container__detail-container {
@@ -13,38 +23,15 @@
 }
 
 .mypage2 .pictures_list {
-  display: grid;
-  /* grid 속성 선언 */
-  grid-template-columns: repeat(3, minmax(400px, 1fr));
-  /* 가로로 minmax 400px 인 grid를 3번 반복 */
-  grid-gap: 200px 100px;
-  /* grid간 간격 */
-  padding: 50px;
-  width: 100%;
-  padding-top: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 50px 0 100px;
+  width: 1200px;
 }
 
 .mypage2 .picture {
   display: flex;
   justify-content: center;
-}
-
-.mypage2 .picture_name {
-  text-align: center;
-  margin: 10px;
-  font-size: 1.5rem;
-}
-
-.mypage2 .price_painter > div {
-  display: inline-block;
-  text-align: center;
-  width: 45%;
-  font-size: 1.2rem;
-  margin: 2%;
-}
-
-.mypage2 .container__detail-btn {
-  width: 100%;
 }
 
 .mypage2 .wellcome_ment > div {

@@ -18,8 +18,8 @@ app.use(
     secret: 'blockinart',
     resave: false,
     saveUninitialized: true,
+    proxy: true,
     cookie: {
-      domain: "localhost",
       path: "/",
       maxAge: 24 * 6 * 60 * 10000,
       sameSite: "none",

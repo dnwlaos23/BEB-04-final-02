@@ -1,9 +1,9 @@
-.signup_choice {
+.nft_success {
   display: flex;
   justify-content: center;
 }
 
-.signup_choice .form_container {
+.nft_success .form_container {
   width: 500px;
   height: 300px;
   margin: 50px 0;
@@ -13,22 +13,19 @@
   align-items: center;
 }
 
-.signup_choice .title {
+.nft_success .success_ment {
   font-weight: bold;
-  font-size: 28px;
-  margin: 5px 0 25px 0;
-  color: rgb(0, 158, 66);
+  font-size: 25px;
 }
 
-.signup_choice .submit {
+.nft_success .submit {
   display: flex;
   justify-content: center;
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-
-.signup_choice .submit button {
+.submit button {
   width: 180px;
   height: 60px;
   border: none;
@@ -37,10 +34,10 @@
   color: white;
   font-weight: bold;
   font-size: 20px;
-  margin-top: 25px;
+  margin-top: 100px;
 }
 
-.signup_choice .submit button:hover {
+.submit button:hover {
   color: green;
   background-color: white;
   font-weight: bold;

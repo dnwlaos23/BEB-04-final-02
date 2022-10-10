@@ -5,5 +5,5 @@ module.exports = {
     cancleReservation: require("./cancleReservation"),
     g_confirmContract: require("./general/confirmContract"),
     a_confirmContract: require("./artist/confirmContract"),
-    
+    tradeDetail: require("./tradeDetail"),
 };

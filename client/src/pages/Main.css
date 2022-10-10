@@ -1,6 +1,21 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main > div:first-child {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
 .main .작가님이신가요 {
   margin-right: 50px;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .main .container__detail-container {
@@ -11,38 +26,11 @@
 }
 
 .main .pictures_list {
-  display: grid;
-  /* grid 속성 선언 */
-  grid-template-columns: repeat(3, minmax(400px, 1fr));
-  /* 가로로 minmax 400px 인 grid를 3번 반복 */
-  grid-gap: 200px 100px;
-  /* grid간 간격 */
-  padding: 50px;
-  width: 100%;
-  padding-top: 100px;
-}
-
-.main .picture {
   display: flex;
-  justify-content: center;
-}
-
-.main .picture_name {
-  text-align: center;
-  margin: 10px;
-  font-size: 1.5rem;
-}
-
-.main .price_painter > div {
-  display: inline-block;
-  text-align: center;
-  width: 45%;
-  font-size: 1.2rem;
-  margin: 2%;
-}
-
-.main .container__detail-btn {
-  width: 100%;
+  flex-flow: row wrap;
+  margin: 50px 0 100px;
+  /* align-items: center; */
+  width: 1200px;
 }
 
 .main .wellcome_ment {
@@ -52,7 +40,21 @@
   margin-top: 50px;
 }
 
-.main .wellcome_ment > div > button > a {
+.main .wellcome_ment button {
+  width: 180px;
+  height: 40px;
+  border: none;
+  background-color: rgb(0, 158, 66);
+  border-radius: 30px;
   color: white;
-  text-decoration: none;
+  font-size: 18px;
+}
+
+.main .wellcome_ment button:hover {
+  color: green;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid green;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
