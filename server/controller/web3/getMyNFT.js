@@ -15,6 +15,8 @@ module.exports = {
       const totalSupply = await tokenContract.methods.totalSupply().call();
 
       console.log(totalSupply);
+    
+      console.log('test');
       res.send('test')
     } catch (error) {
       console.log(error);
