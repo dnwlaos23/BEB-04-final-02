@@ -16,7 +16,6 @@ module.exports = {
 
       console.log(totalSupply);
     
-      console.log('test');
       res.send('test')
     } catch (error) {
       console.log(error);
